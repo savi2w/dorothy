@@ -1,0 +1,23 @@
+version: "3"
+services:
+  dorothy:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    depends_on:
+      - "faker-http"
+      - "postgres"
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN?err}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD?err}
+
+  faker-http:
+    build:
+      context: .
+      dockerfile: faker-http/Dockerfile
+
+  postgres:
+    image: "postgres:12.1-alpine"
+    environment:
+      POSTGRES_DB: dorothy
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD?err}

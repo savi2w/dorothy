@@ -1,0 +1,13 @@
+{
+  "name": "faker",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "koa": "^2.11.0"
+  }
+}
