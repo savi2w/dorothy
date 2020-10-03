@@ -1,6 +1,6 @@
 # Dorothy
 
-A "nickname color" management for Discord
+Nickname color management for Discord
 
 ## License
 
