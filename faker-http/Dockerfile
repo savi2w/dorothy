@@ -3,9 +3,9 @@ LABEL maintainer="weslenng"
 
 WORKDIR /dorothy/faker-http
 COPY faker-http/package.json ./
-COPY faker-http/yarn.lock ./
-RUN yarn --pure-lockfile
+COPY faker-http/package-lock.json ./
+RUN npm install
 
 COPY faker-http/. .
 
-CMD ["yarn", "start"]
+CMD ["npm", "run", "start"]
