@@ -1,7 +1,7 @@
 {
   "name": "faker-http",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "faker-http.js",
   "license": "MIT",
   "scripts": {
     "start": "node faker-http.js"
