@@ -1,0 +1,13 @@
+{
+  "name": "faker-http",
+  "version": "1.0.0",
+  "main": "faker-http.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node faker-http.js"
+  },
+  "dependencies": {
+    "faker": "^4.1.0",
+    "koa": "^2.11.0"
+  }
+}
